@@ -9,8 +9,9 @@ import figlet from 'figlet';
 // import method to create projects
 import create from './create';
 import wizard from './wizard';
+import faucet from './faucet';
 
-const availableOptions: string[] = ['create', 'wizard'];
+const availableOptions: string[] = ['create', 'wizard', 'faucet'];
 
 // second argument should be the selected option
 const option: string = process.argv[2];
@@ -21,7 +22,6 @@ if (!availableOptions.includes(option)) {
   );
   process.exit(-1);
 }
-
 // Starts CLI
 
 console.log(
@@ -38,5 +38,8 @@ switch (option) {
     break;
   case 'wizard':
     wizard();
+    break;
+  case 'faucet':
+    faucet();
     break;
 }

@@ -1,6 +1,6 @@
 {
   "name": "contract-wizard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI Tool for Contract Creation (ERC20,ERC721,ERC1155,GOVERNANCE) and Deployment and faucet option .",
   "main": "bin/index.js",
   "bin": {
@@ -32,7 +32,8 @@
     "chalk": "4.1.2",
     "ethers": "^5.7.2",
     "figlet": "^1.5.2",
-    "inquirer": "^8.1.4"
+    "inquirer": "^8.1.4",
+    "open": "9.1.0"
   },
   "devDependencies": {
     "@openzeppelin/wizard": "^0.2.0",
