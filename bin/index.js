@@ -12,7 +12,8 @@ const figlet_1 = __importDefault(require("figlet"));
 const create_1 = __importDefault(require("./create"));
 const wizard_1 = __importDefault(require("./wizard"));
 const faucet_1 = __importDefault(require("./faucet"));
-const availableOptions = ['create', 'wizard', 'faucet'];
+const ide_1 = __importDefault(require("./ide"));
+const availableOptions = ['create', 'wizard', 'faucet', 'ide'];
 // second argument should be the selected option
 const option = process.argv[2];
 if (!availableOptions.includes(option)) {
@@ -32,5 +33,9 @@ switch (option) {
         break;
     case 'faucet':
         (0, faucet_1.default)();
+        break;
+    case 'ide':
+        const name = process.argv[3] || 'polygon';
+        (0, ide_1.default)({ name });
         break;
 }

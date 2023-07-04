@@ -10,8 +10,9 @@ import figlet from 'figlet';
 import create from './create';
 import wizard from './wizard';
 import faucet from './faucet';
+import ide from './ide';
 
-const availableOptions: string[] = ['create', 'wizard', 'faucet'];
+const availableOptions: string[] = ['create', 'wizard', 'faucet', 'ide'];
 
 // second argument should be the selected option
 const option: string = process.argv[2];
@@ -41,5 +42,9 @@ switch (option) {
     break;
   case 'faucet':
     faucet();
+    break;
+  case 'ide':
+    const name = process.argv[3] || 'polygon';
+    ide({name});
     break;
 }
