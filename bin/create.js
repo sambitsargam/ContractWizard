@@ -36,7 +36,7 @@ function default_1(projectName) {
         // changes dir and installs deps with Yarn
         const installDeps = `cd ${projectName} && yarn`;
         const cleanup = `cd ${projectName}`;
-        console.log(chalk_1.default.magentaBright('Creating a Hardhat project...'));
+        console.log(chalk_1.default.magentaBright('Creating a Stater - Hardhat project...'));
         console.log(chalk_1.default.magentaBright(`Initialising project with name ${projectName}`));
         const cloned = runCommand(cloneGitTemplate);
         if (!cloned)
@@ -55,7 +55,7 @@ Contracts are stored in the /contracts folder.
 Deployment scripts go in the /deploy folder.
 
 Run ${chalk_1.default.magentaBright('yarn hardhat compile')} to compile your contracts.
-Run ${chalk_1.default.magentaBright('yarn hardhat run scripts/deploy.js')} to deploy your contract (this command accepts a --script option).
+Run ${chalk_1.default.magentaBright('yarn hardhat run scripts/deploy.js')} to deploy your contract make the chain as default (this command accepts a --script option).
 
 Run ${chalk_1.default.magentaBright('git init')} to initialise a new repository.
 
