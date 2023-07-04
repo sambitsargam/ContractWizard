@@ -19,8 +19,9 @@ You can install this program globally with `npm i -g contract-wizard` or run the
 - `contract-wizard wizard`: starts the wizard to create a new contract. The wizard will ask for the contract name, symbol, and type (ERC20, ERC721, ERC1155, or Governance). It will contract that saved as your contract name (.sol).
 All different type of contract have different option to choose from like mintable, burnable, pausable, etc.
 
-- `contract-wizard faucet {ADDRESS}`: Able to produce a link(to be post on twitter) to get testnet token for testing purpose.
+- `contract-wizard faucet `: Able to produce a links to get testnet token for testing purpose.
 
+- `contract-wizard ide {CHAIN_NAME}` : Start a project on ChainlinkIDE to test your contract.
 ## Developing new features
 
 ### Install and build
@@ -37,4 +38,4 @@ git push --tags
 
 ### Testing
 
-Proper tests will be included soon. For now, you can test new changes locally by installing this package globably with `npm i -g`.
+Proper tests will be included soon. For now, you can test new changes locally by installing this package globably with `npm i -g contract-wizard`.
