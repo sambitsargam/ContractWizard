@@ -1,27 +1,9 @@
-import chalk from 'chalk';
-import { execSync } from 'child_process';
-import open from 'open';
+import chalk from "chalk";
 
-const runCommand = (command: string) => {
-  try {
-    execSync(command, { stdio: 'inherit' });
-  } catch (error) {
-    console.error('Failed to run command: ', error);
-    return false;
-  }
-  return true;
-};
 
-export default async function () {
-  const faucetUrl = 'https://www.alchemy.com/best/crypto-faucets'; // faucet URL
+const urls = `https://www.alchemy.com/best/crypto-faucets or https://moralis.io/faucets/`;
 
-  console.log(chalk.magentaBright('Running faucet command...'));
-
-  // Perform the faucet operation here...
-
-  // Open URL in the browser
-  console.log(chalk.magentaBright('Opening faucet URL in browser...'));
-  open(faucetUrl);
-
-  console.log(chalk.magentaBright('Faucet command completed successfully.'));
+export default function faucet() {
+    console.log(chalk.magentaBright(`To get faucet claim by this urls through address ...`));
+    console.log(chalk.greenBright(`Please visit \n ${urls} \n to fund your wallet.`));
 }

@@ -1,6 +1,6 @@
 {
   "name": "contract-wizard",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "CLI Tool for Contract Creation (ERC20,ERC721,ERC1155,GOVERNANCE) and Deployment and faucet option .",
   "main": "bin/index.js",
   "bin": {
